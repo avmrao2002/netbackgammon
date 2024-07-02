@@ -1,0 +1,590 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NetChess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LDAPExplorer.ico"
+IDR_NETCHETYPE          ICON    DISCARDABLE     "res\\NetChessDoc.ico"
+IDI_ICON_MAINFRAME_OPPOSITE ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_DICE1               BITMAP  DISCARDABLE     "res\\Dice1.bmp"
+IDB_DICE2               BITMAP  DISCARDABLE     "res\\Dice2.bmp"
+IDB_DICE3               BITMAP  DISCARDABLE     "res\\Dice3.bmp"
+IDB_DICE4               BITMAP  DISCARDABLE     "res\\Dice4.bmp"
+IDB_DICE5               BITMAP  DISCARDABLE     "res\\Dice5.bmp"
+IDB_DICE6               BITMAP  DISCARDABLE     "res\\Dice6.bmp"
+IDB_DICE                BITMAP  DISCARDABLE     "res\\Dice.bmp"
+IDB_BITMAP_BASE         BITMAP  DISCARDABLE     "res\\base.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_TOOLS_SENDMESSAGE
+    BUTTON      ID_EDIT_OPTIONS
+    BUTTON      ID_VIEW_HIDE
+    BUTTON      ID_TOOLS_SERVER
+    BUTTON      ID_TOOLS_CLIENT
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_TOOLS_DISCONNECT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "O&ptions\tCtrl+P",            ID_EDIT_OPTIONS
+        MENUITEM "Pr&operties\tCtrl+R",         ID_EDIT_PROPERTIES
+        MENUITEM "Undo\tCtrl-Z",                ID_EDIT_UNDO
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Client\tCtrl+C",             ID_TOOLS_CLIENT
+        MENUITEM "&Server\tCtrl+E",             ID_TOOLS_SERVER
+        MENUITEM "&Disconnect\tCtrl+D",         ID_TOOLS_DISCONNECT
+        MENUITEM "Send &Message\tCtrl+M",       ID_TOOLS_SENDMESSAGE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Hide\tCtrl+H",               ID_VIEW_HIDE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About NetBackgammon...",     ID_APP_ABOUT
+        MENUITEM "&How to play",                ID_HELP_HOWTOPLAY
+    END
+END
+
+IDR_SHELL_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Shell"
+    BEGIN
+        MENUITEM "&Close",                      ID_SHELL_CLOSE
+        MENUITEM "&View",                       ID_SHELL_VIEW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_FILE_SAVEHISTORY,    VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_TOOLS_CLIENT,        VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_TOOLS_DISCONNECT,    VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_TOOLS_SERVER,        VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_MOVEFIRST,      VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_TOOLS_GAMETYPE,      VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_VIEW_HIDE,           VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_VIEW_HISTORY,        VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_TOOLS_SENDMESSAGE,   VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_EDIT_OPTIONS,        VIRTKEY, CONTROL, NOINVERT
+    "R",            D_EDIT_PROPERTIES,      VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "W",            ID_TOOLS_WHITEONTOP,    VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 197, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "About NetBackgammon"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,8,7,20,20
+    LTEXT           "NetBackgammon Version 1.0",IDC_STATIC,40,10,94,8,
+                    SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,140,7,50,14,WS_GROUP
+    LTEXT           "Developed by A.V.Maheswara Rao",IDC_STATIC,38,36,136,8
+    LTEXT           "Contact: raoavm@yahoo.com",IDC_STATIC,37,49,99,8
+END
+
+IDD_DIALOG_OPTIONS DIALOGEX 0, 0, 149, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,92,130,50,14
+    CONTROL         "White On Top",IDC_CHECK_WHITE_ON_TOP,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,13,10,61,
+                    10
+    PUSHBUTTON      "White square color",IDC_BUTTON_WHITE_COLOR,12,31,63,14
+    PUSHBUTTON      "Black square color",IDC_BUTTON_BLACK_COLOR,77,31,65,14
+    LTEXT           "",IDC_STATIC_WHITE,13,49,56,15
+    LTEXT           "",IDC_STATIC_BLACK,82,49,60,15
+    GROUPBOX        "Select board square color",IDC_STATIC,7,16,135,59
+    GROUPBOX        "Select piece color",IDC_STATIC,7,78,135,51
+    PUSHBUTTON      "White piece color",IDC_BUTTON_WHITE_PIECE_COLOR,14,89,
+                    58,14
+    PUSHBUTTON      "Black piece color",IDC_BUTTON_BLACK_PIECE_COLOR,83,89,
+                    59,14
+    LTEXT           "",IDC_STATIC_WHITE_PIECE_COLOR,17,111,51,14
+    LTEXT           "",IDC_STATIC_BLACK_PIECE_COLOR,83,109,51,14
+END
+
+IDD_DIALOG_SERVER_INFO DIALOGEX 0, 0, 179, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Server Info"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "IPAddress1",IDC_IPADDRESS,"SysIPAddress32",NOT 
+                    WS_VISIBLE | WS_TABSTOP,83,18,80,14
+    EDITTEXT        IDC_EDIT_PORT_NUMBER,84,37,26,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,84,72,40,14
+    PUSHBUTTON      "Close",IDCANCEL,132,72,40,14
+    LTEXT           "Server IP address",IDC_STATIC_IP_ADDRESS,17,21,57,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Server Port Number",IDC_STATIC,18,40,63,8
+    LTEXT           "Your Name",IDC_STATIC,18,59,54,8
+    EDITTEXT        IDC_NAME,83,56,80,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MESSAGE DIALOGEX 0, 0, 187, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Chat"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Send",IDOK,41,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,95,50,14
+    EDITTEXT        IDC_EDIT_MESSAGE,7,50,166,39,ES_MULTILINE | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_RECEIVE_MESSAGE,7,7,166,41,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_DIALOG_HISTORY DIALOGEX 0, 0, 133, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "History"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,76,132,50,14
+    EDITTEXT        IDC_EDIT_HISTORY,7,7,119,118,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_DIALOG_PROPERTIES DIALOG DISCARDABLE  0, 0, 223, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,166,74,50,14
+    LTEXT           "",IDC_STATIC_STATUS,19,23,191,8
+    LTEXT           "",IDC_STATIC_CLIENT_STATUS,19,42,191,8
+END
+
+IDD_DIALOG_HOWTOPLAY DIALOGEX 0, 0, 330, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "How To Play"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,175,50,14
+    EDITTEXT        IDC_EDIT_STRING,17,18,306,154,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NetBackgammon MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NetBackgammon\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NetBackgammon.EXE\0"
+            VALUE "ProductName", "NetBackgammon Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DIALOG_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DIALOG_SERVER_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DIALOG_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DIALOG_HISTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_DIALOG_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_HOWTOPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "NetBackgammon by A.V.Maheswara Rao\nNetBackgammon\nNetChe\n\n\nNetBackgammon.Document\nNetChe Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NetBackgammon by A.V.Maheswara Rao"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new game\nNew"
+    ID_FILE_OPEN            "Open an existing game\nOpen"
+    ID_FILE_CLOSE           "Close the game\nClose"
+    ID_FILE_SAVE            "Save the playing game\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last move"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_HIDE            "Hide the current active window\nHide"
+    ID_EDIT_OPTIONS         "Select board color\nOptions"
+    ID_TOOLS_CLIENT         "Enter Server IP and Port\nClient"
+    ID_TOOLS_SERVER         "Enter Server IP address\nServer"
+    ID_TOOLS_SENDMESSAGE    "Send an instant message\nSend Message"
+    ID_VIEW_NUMBER          "Show or hide board numbers\nNumber"
+    ID_VIEW_LETTER          "show or hide board letters\nLetter"
+    ID_FILE_SAVEHISTORY     "Save History\nSave History"
+    ID_TOOLS_PLAYHISTORY    "Play history\nPlay History"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_HISTORY         "Show history of playing game\nHistory"
+    ID_TOOLS_WHITEONTOP     "Change the piece side\nWhite On Top"
+    ID_EDIT_MOVEFIRST       "Move to Beginning of the game\nMove First"
+    ID_EDIT_MOVELAST        "Move to the End of the game\nMove Last"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_DISCONNECT     "Disconnect from client/server\nDisconnect"
+    ID_EDIT_PROPERTIES      "Displays about the client/server information"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\NetChess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
